@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		290E7261C8C35D762DA2A2DF /* Pods_StravaActivityGetter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5442362787DD240AA7D8EE54 /* Pods_StravaActivityGetter.framework */; };
+		9F1583A62487476700124ABF /* BestPowers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1583A52487476700124ABF /* BestPowers.swift */; };
+		9F1583A8248747B800124ABF /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1583A7248747B800124ABF /* Stream.swift */; };
+		9F1C79BA2483F86600B42CF8 /* SQLiteSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C79B92483F86600B42CF8 /* SQLiteSwift.swift */; };
+		9F2B507E247B005B002BF45E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B507D247B005B002BF45E /* AppDelegate.swift */; };
+		9F2B5080247B005B002BF45E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B507F247B005B002BF45E /* SceneDelegate.swift */; };
+		9F2B5082247B005B002BF45E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B5081247B005B002BF45E /* ViewController.swift */; };
+		9F2B5087247B005D002BF45E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F2B5086247B005D002BF45E /* Assets.xcassets */; };
+		9F2B508A247B005D002BF45E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2B5088247B005D002BF45E /* LaunchScreen.storyboard */; };
+		9F2B5096247B0097002BF45E /* BaseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B5092247B0097002BF45E /* BaseListController.swift */; };
+		9F2B5097247B0097002BF45E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B5093247B0097002BF45E /* Extensions.swift */; };
+		9F2B5098247B0097002BF45E /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B5094247B0097002BF45E /* UIView+Layout.swift */; };
+		9F2B5099247B0097002BF45E /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B5095247B0097002BF45E /* VerticalStackView.swift */; };
+		9F2B509C247B014B002BF45E /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B509B247B014B002BF45E /* ActivityCell.swift */; };
+		9F46A0C024C687D300AE51B2 /* WeeklyTSSController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46A0BF24C687D300AE51B2 /* WeeklyTSSController.swift */; };
+		9F46A0C324C68BC300AE51B2 /* SummaryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46A0C224C68BC300AE51B2 /* SummaryViewCell.swift */; };
+		9F46A0C624C7DA4A00AE51B2 /* TSSInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46A0C524C7DA4A00AE51B2 /* TSSInfo.swift */; };
+		9F50536E24CA2D29005467B3 /* WeeklyActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F50536D24CA2D29005467B3 /* WeeklyActivityCell.swift */; };
+		9F50537024D5C64E005467B3 /* ActivityWithPower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F50536F24D5C64E005467B3 /* ActivityWithPower.swift */; };
+		9F50537224DF90FF005467B3 /* MySegmentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F50537124DF90FF005467B3 /* MySegmentsController.swift */; };
+		9F5447F4247F6376000F61BB /* GrabAllEffortsForSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5447F3247F6376000F61BB /* GrabAllEffortsForSegment.swift */; };
+		9F5447F6247F647E000F61BB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5447F5247F647E000F61BB /* Service.swift */; };
+		9F58A7CC248EDA0100196599 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F58A7CB248EDA0100196599 /* APIConfig.swift */; };
+		9F58A7CE248EDB0600196599 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F58A7CD248EDB0600196599 /* HomeScreen.swift */; };
+		9F59E8CC247B03EC00B07D25 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F59E8CB247B03EC00B07D25 /* Default-568h@2x.png */; };
+		9F59E8CE247B0CD500B07D25 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F59E8CD247B0CD500B07D25 /* Activity.swift */; };
+		9F59E8D0247B68B800B07D25 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F59E8CF247B68B800B07D25 /* Utility.swift */; };
+		9F790D46249DC3DC00E03487 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F790D45249DC3DC00E03487 /* Authorization.swift */; };
+		9F8DE8B524E32E29001B1D7A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8DE8B424E32E29001B1D7A /* TabBarController.swift */; };
+		9FB75D742489A5B9005F656E /* Analyze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB75D732489A5B9005F656E /* Analyze.swift */; };
+		9FC1EE3824E333990014DE5B /* SegmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1EE3724E333990014DE5B /* SegmentCell.swift */; };
+		9FC1EE3A24E33BC80014DE5B /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1EE3924E33BC80014DE5B /* Segment.swift */; };
+		9FC1EE3D24E342790014DE5B /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1EE3C24E342790014DE5B /* Database.swift */; };
+		9FC1EE3F24E588EA0014DE5B /* SegmentEffortsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1EE3E24E588EA0014DE5B /* SegmentEffortsController.swift */; };
+		9FC1EE4124E58C640014DE5B /* SegmentEffortCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1EE4024E58C640014DE5B /* SegmentEffortCell.swift */; };
+		9FC1EE4324E58FC20014DE5B /* SegmentEffort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1EE4224E58FC20014DE5B /* SegmentEffort.swift */; };
+		9FC1EE4524E621E50014DE5B /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1EE4424E621E50014DE5B /* TestController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2813795319EEE119CC797383 /* Pods-StravaActivityGetter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaActivityGetter.release.xcconfig"; path = "Target Support Files/Pods-StravaActivityGetter/Pods-StravaActivityGetter.release.xcconfig"; sourceTree = "<group>"; };
+		5442362787DD240AA7D8EE54 /* Pods_StravaActivityGetter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaActivityGetter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F1583A52487476700124ABF /* BestPowers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestPowers.swift; sourceTree = "<group>"; };
+		9F1583A7248747B800124ABF /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		9F1C79B92483F86600B42CF8 /* SQLiteSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteSwift.swift; sourceTree = "<group>"; };
+		9F2B507A247B005B002BF45E /* StravaActivityGetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StravaActivityGetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F2B507D247B005B002BF45E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F2B507F247B005B002BF45E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9F2B5081247B005B002BF45E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F2B5086247B005D002BF45E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F2B5089247B005D002BF45E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F2B508B247B005D002BF45E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F2B5092247B0097002BF45E /* BaseListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseListController.swift; sourceTree = "<group>"; };
+		9F2B5093247B0097002BF45E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9F2B5094247B0097002BF45E /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		9F2B5095247B0097002BF45E /* VerticalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
+		9F2B509B247B014B002BF45E /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		9F46A0BF24C687D300AE51B2 /* WeeklyTSSController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyTSSController.swift; sourceTree = "<group>"; };
+		9F46A0C224C68BC300AE51B2 /* SummaryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewCell.swift; sourceTree = "<group>"; };
+		9F46A0C524C7DA4A00AE51B2 /* TSSInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSInfo.swift; sourceTree = "<group>"; };
+		9F50536D24CA2D29005467B3 /* WeeklyActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyActivityCell.swift; sourceTree = "<group>"; };
+		9F50536F24D5C64E005467B3 /* ActivityWithPower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityWithPower.swift; sourceTree = "<group>"; };
+		9F50537124DF90FF005467B3 /* MySegmentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySegmentsController.swift; sourceTree = "<group>"; };
+		9F5447F3247F6376000F61BB /* GrabAllEffortsForSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrabAllEffortsForSegment.swift; sourceTree = "<group>"; };
+		9F5447F5247F647E000F61BB /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		9F58A7CB248EDA0100196599 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		9F58A7CD248EDB0600196599 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		9F59E8CB247B03EC00B07D25 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9F59E8CD247B0CD500B07D25 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		9F59E8CF247B68B800B07D25 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		9F790D45249DC3DC00E03487 /* Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
+		9F8DE8B424E32E29001B1D7A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		9FB75D732489A5B9005F656E /* Analyze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analyze.swift; sourceTree = "<group>"; };
+		9FC1EE3724E333990014DE5B /* SegmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentCell.swift; sourceTree = "<group>"; };
+		9FC1EE3924E33BC80014DE5B /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		9FC1EE3C24E342790014DE5B /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		9FC1EE3E24E588EA0014DE5B /* SegmentEffortsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentEffortsController.swift; sourceTree = "<group>"; };
+		9FC1EE4024E58C640014DE5B /* SegmentEffortCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentEffortCell.swift; sourceTree = "<group>"; };
+		9FC1EE4224E58FC20014DE5B /* SegmentEffort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentEffort.swift; sourceTree = "<group>"; };
+		9FC1EE4424E621E50014DE5B /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
+		D80B163931A8B908B336AF6C /* Pods-StravaActivityGetter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaActivityGetter.debug.xcconfig"; path = "Target Support Files/Pods-StravaActivityGetter/Pods-StravaActivityGetter.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F2B5077247B005B002BF45E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290E7261C8C35D762DA2A2DF /* Pods_StravaActivityGetter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0182B46C3E72C4A2804C1E74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D80B163931A8B908B336AF6C /* Pods-StravaActivityGetter.debug.xcconfig */,
+				2813795319EEE119CC797383 /* Pods-StravaActivityGetter.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F1C78892482CAB800D466D4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9F5447F5247F647E000F61BB /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9F2B5071247B005B002BF45E = {
+			isa = PBXGroup;
+			children = (
+				9F59E8CB247B03EC00B07D25 /* Default-568h@2x.png */,
+				9F2B507C247B005B002BF45E /* StravaActivityGetter */,
+				9F2B507B247B005B002BF45E /* Products */,
+				0182B46C3E72C4A2804C1E74 /* Pods */,
+				D0F8EE285396E307969970E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9F2B507B247B005B002BF45E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F2B507A247B005B002BF45E /* StravaActivityGetter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F2B507C247B005B002BF45E /* StravaActivityGetter */ = {
+			isa = PBXGroup;
+			children = (
+				9FC1EE3B24E3426B0014DE5B /* Database */,
+				9F790D47249DC44600E03487 /* Utitlity */,
+				9F1C78892482CAB800D466D4 /* Service */,
+				9F2B509F247B02E3002BF45E /* View */,
+				9F2B50A0247B02F9002BF45E /* Controllers */,
+				9F2B509D247B02A1002BF45E /* Delegates */,
+				9F2B509A247B013C002BF45E /* Model */,
+				9F2B5091247B0097002BF45E /* Helpers */,
+				9F2B509E247B02C2002BF45E /* Resources */,
+				9F2B508B247B005D002BF45E /* Info.plist */,
+				9F58A7CB248EDA0100196599 /* APIConfig.swift */,
+			);
+			path = StravaActivityGetter;
+			sourceTree = "<group>";
+		};
+		9F2B5091247B0097002BF45E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9F2B5092247B0097002BF45E /* BaseListController.swift */,
+				9F2B5093247B0097002BF45E /* Extensions.swift */,
+				9F2B5094247B0097002BF45E /* UIView+Layout.swift */,
+				9F2B5095247B0097002BF45E /* VerticalStackView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9F2B509A247B013C002BF45E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F59E8CD247B0CD500B07D25 /* Activity.swift */,
+				9F1583A7248747B800124ABF /* Stream.swift */,
+				9F790D45249DC3DC00E03487 /* Authorization.swift */,
+				9F50536F24D5C64E005467B3 /* ActivityWithPower.swift */,
+				9FC1EE3924E33BC80014DE5B /* Segment.swift */,
+				9FC1EE4224E58FC20014DE5B /* SegmentEffort.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F2B509D247B02A1002BF45E /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				9F2B507F247B005B002BF45E /* SceneDelegate.swift */,
+				9F2B507D247B005B002BF45E /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		9F2B509E247B02C2002BF45E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F2B5086247B005D002BF45E /* Assets.xcassets */,
+				9F2B5088247B005D002BF45E /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9F2B509F247B02E3002BF45E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FC1EE3624E333810014DE5B /* SegmentViews */,
+				9F46A0C124C68BAB00AE51B2 /* WeeklyTSSViews */,
+				9F2B509B247B014B002BF45E /* ActivityCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F2B50A0247B02F9002BF45E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9FC1EE4624EA19760014DE5B /* OldControllers */,
+				9FF08A2424E32FE20074283A /* Tabs */,
+				9F58A7CD248EDB0600196599 /* HomeScreen.swift */,
+				9F8DE8B424E32E29001B1D7A /* TabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9F46A0C124C68BAB00AE51B2 /* WeeklyTSSViews */ = {
+			isa = PBXGroup;
+			children = (
+				9F46A0C224C68BC300AE51B2 /* SummaryViewCell.swift */,
+				9F50536D24CA2D29005467B3 /* WeeklyActivityCell.swift */,
+			);
+			path = WeeklyTSSViews;
+			sourceTree = "<group>";
+		};
+		9F46A0C424C7D9F200AE51B2 /* WeeklyTSS */ = {
+			isa = PBXGroup;
+			children = (
+				9F46A0BF24C687D300AE51B2 /* WeeklyTSSController.swift */,
+				9F46A0C524C7DA4A00AE51B2 /* TSSInfo.swift */,
+			);
+			path = WeeklyTSS;
+			sourceTree = "<group>";
+		};
+		9F50537324DF9104005467B3 /* MySegments */ = {
+			isa = PBXGroup;
+			children = (
+				9F50537124DF90FF005467B3 /* MySegmentsController.swift */,
+				9FC1EE3E24E588EA0014DE5B /* SegmentEffortsController.swift */,
+			);
+			path = MySegments;
+			sourceTree = "<group>";
+		};
+		9F790D47249DC44600E03487 /* Utitlity */ = {
+			isa = PBXGroup;
+			children = (
+				9F59E8CF247B68B800B07D25 /* Utility.swift */,
+				9F1C79B92483F86600B42CF8 /* SQLiteSwift.swift */,
+				9FB75D732489A5B9005F656E /* Analyze.swift */,
+			);
+			path = Utitlity;
+			sourceTree = "<group>";
+		};
+		9FC1EE3624E333810014DE5B /* SegmentViews */ = {
+			isa = PBXGroup;
+			children = (
+				9FC1EE3724E333990014DE5B /* SegmentCell.swift */,
+				9FC1EE4024E58C640014DE5B /* SegmentEffortCell.swift */,
+			);
+			path = SegmentViews;
+			sourceTree = "<group>";
+		};
+		9FC1EE3B24E3426B0014DE5B /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				9FC1EE3C24E342790014DE5B /* Database.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		9FC1EE4624EA19760014DE5B /* OldControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F2B5081247B005B002BF45E /* ViewController.swift */,
+				9F5447F3247F6376000F61BB /* GrabAllEffortsForSegment.swift */,
+				9F1583A52487476700124ABF /* BestPowers.swift */,
+				9FC1EE4424E621E50014DE5B /* TestController.swift */,
+			);
+			path = OldControllers;
+			sourceTree = "<group>";
+		};
+		9FF08A2424E32FE20074283A /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				9F46A0C424C7D9F200AE51B2 /* WeeklyTSS */,
+				9F50537324DF9104005467B3 /* MySegments */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		D0F8EE285396E307969970E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5442362787DD240AA7D8EE54 /* Pods_StravaActivityGetter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F2B5079247B005B002BF45E /* StravaActivityGetter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F2B508E247B005D002BF45E /* Build configuration list for PBXNativeTarget "StravaActivityGetter" */;
+			buildPhases = (
+				D6988A03E2E0D9345665B48A /* [CP] Check Pods Manifest.lock */,
+				9F2B5076247B005B002BF45E /* Sources */,
+				9F2B5077247B005B002BF45E /* Frameworks */,
+				9F2B5078247B005B002BF45E /* Resources */,
+				2F733E5060772599CAF67324 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StravaActivityGetter;
+			productName = StravaActivityGetter;
+			productReference = 9F2B507A247B005B002BF45E /* StravaActivityGetter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F2B5072247B005B002BF45E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Allen;
+				TargetAttributes = {
+					9F2B5079247B005B002BF45E = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 9F2B5075247B005B002BF45E /* Build configuration list for PBXProject "StravaActivityGetter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F2B5071247B005B002BF45E;
+			productRefGroup = 9F2B507B247B005B002BF45E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F2B5079247B005B002BF45E /* StravaActivityGetter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F2B5078247B005B002BF45E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F2B508A247B005D002BF45E /* LaunchScreen.storyboard in Resources */,
+				9F2B5087247B005D002BF45E /* Assets.xcassets in Resources */,
+				9F59E8CC247B03EC00B07D25 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F733E5060772599CAF67324 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StravaActivityGetter/Pods-StravaActivityGetter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StravaActivityGetter/Pods-StravaActivityGetter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StravaActivityGetter/Pods-StravaActivityGetter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6988A03E2E0D9345665B48A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StravaActivityGetter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F2B5076247B005B002BF45E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FC1EE3D24E342790014DE5B /* Database.swift in Sources */,
+				9F50537024D5C64E005467B3 /* ActivityWithPower.swift in Sources */,
+				9F59E8D0247B68B800B07D25 /* Utility.swift in Sources */,
+				9FC1EE4524E621E50014DE5B /* TestController.swift in Sources */,
+				9FC1EE3F24E588EA0014DE5B /* SegmentEffortsController.swift in Sources */,
+				9F2B5097247B0097002BF45E /* Extensions.swift in Sources */,
+				9FC1EE3A24E33BC80014DE5B /* Segment.swift in Sources */,
+				9F50537224DF90FF005467B3 /* MySegmentsController.swift in Sources */,
+				9FC1EE4324E58FC20014DE5B /* SegmentEffort.swift in Sources */,
+				9F1583A8248747B800124ABF /* Stream.swift in Sources */,
+				9F2B5082247B005B002BF45E /* ViewController.swift in Sources */,
+				9FC1EE3824E333990014DE5B /* SegmentCell.swift in Sources */,
+				9F58A7CC248EDA0100196599 /* APIConfig.swift in Sources */,
+				9F2B509C247B014B002BF45E /* ActivityCell.swift in Sources */,
+				9F790D46249DC3DC00E03487 /* Authorization.swift in Sources */,
+				9F2B5098247B0097002BF45E /* UIView+Layout.swift in Sources */,
+				9F46A0C624C7DA4A00AE51B2 /* TSSInfo.swift in Sources */,
+				9F46A0C324C68BC300AE51B2 /* SummaryViewCell.swift in Sources */,
+				9F1C79BA2483F86600B42CF8 /* SQLiteSwift.swift in Sources */,
+				9F8DE8B524E32E29001B1D7A /* TabBarController.swift in Sources */,
+				9F5447F6247F647E000F61BB /* Service.swift in Sources */,
+				9F1583A62487476700124ABF /* BestPowers.swift in Sources */,
+				9F46A0C024C687D300AE51B2 /* WeeklyTSSController.swift in Sources */,
+				9F5447F4247F6376000F61BB /* GrabAllEffortsForSegment.swift in Sources */,
+				9F2B507E247B005B002BF45E /* AppDelegate.swift in Sources */,
+				9F2B5096247B0097002BF45E /* BaseListController.swift in Sources */,
+				9F50536E24CA2D29005467B3 /* WeeklyActivityCell.swift in Sources */,
+				9FB75D742489A5B9005F656E /* Analyze.swift in Sources */,
+				9F58A7CE248EDB0600196599 /* HomeScreen.swift in Sources */,
+				9F59E8CE247B0CD500B07D25 /* Activity.swift in Sources */,
+				9F2B5080247B005B002BF45E /* SceneDelegate.swift in Sources */,
+				9FC1EE4124E58C640014DE5B /* SegmentEffortCell.swift in Sources */,
+				9F2B5099247B0097002BF45E /* VerticalStackView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F2B5088247B005D002BF45E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F2B5089247B005D002BF45E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F2B508C247B005D002BF45E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F2B508D247B005D002BF45E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F2B508F247B005D002BF45E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D80B163931A8B908B336AF6C /* Pods-StravaActivityGetter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HF4W8PP88F;
+				INFOPLIST_FILE = StravaActivityGetter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.allenliang.StravaActivityGetter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9F2B5090247B005D002BF45E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2813795319EEE119CC797383 /* Pods-StravaActivityGetter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HF4W8PP88F;
+				INFOPLIST_FILE = StravaActivityGetter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.allenliang.StravaActivityGetter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F2B5075247B005B002BF45E /* Build configuration list for PBXProject "StravaActivityGetter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F2B508C247B005D002BF45E /* Debug */,
+				9F2B508D247B005D002BF45E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F2B508E247B005D002BF45E /* Build configuration list for PBXNativeTarget "StravaActivityGetter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F2B508F247B005D002BF45E /* Debug */,
+				9F2B5090247B005D002BF45E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F2B5072247B005B002BF45E /* Project object */;
+}

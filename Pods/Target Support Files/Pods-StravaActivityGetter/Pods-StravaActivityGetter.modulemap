@@ -1,0 +1,6 @@
+framework module Pods_StravaActivityGetter {
+  umbrella header "Pods-StravaActivityGetter-umbrella.h"
+
+  export *
+  module * { export * }
+}
